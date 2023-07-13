@@ -1,0 +1,474 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: gainsboro;
+}
+
+.sidebar{
+    width: 13%;
+    height: 100vh;
+    background-color: grey;
+    position: sticky;
+    top: 0;
+    /* padding-right: 40px; */
+}
+
+.content{
+    width: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home{
+   display: flex;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+}
+nav li a{
+    color: white;
+}
+nav li a:hover{
+    color: black;
+    font-size: 1.5rem;
+}
+li{
+    list-style: none;
+}
+nav{
+    height: 60%;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+}
+.info{
+    height: 600px;
+    width: 1100px;
+    display: flex;
+}
+.name{
+    width: 66%;
+    /* background-color: blueviolet; */
+}
+.pic{
+    width: 34%;
+    /* background-color: brown; */
+}
+img{
+    width: 100%;
+}
+.cp{
+   font-size: 60px;
+   font-family: 'Bree Serif', serif;
+}
+
+.dsa{
+    font-size: 30px;
+    font-family: 'Bree Serif', serif;
+ }
+ 
+ .buttons{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    flex-wrap: wrap;
+}
+ .btn{
+    padding: 4px;
+    padding: 0px 60px;
+    font-size: 30px;
+    font-family: 'Bree Serif', serif;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: rgb(120, 30, 210);
+}
+
+h{
+    color: rgb(120, 30, 210); 
+}
+
+/*Responsive for home..............................................*/
+@media  (max-width:1100px){
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+    }
+
+    .sidebar{
+        height: 150px;
+        width: 100%;
+        position: sticky;
+        top: 0px;
+    }
+
+    nav{
+        margin-top: 15px;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+   
+    .info{
+        margin: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .name{
+        text-align: center;
+    }
+    .pic{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 400px;
+    }
+   .buttons{
+    display: flex;
+    justify-content: center;
+   }
+}
+
+
+
+
+
+/*CONTACT MENU............................................................................................................................*/
+
+.address{
+   height: 38em;
+   width: 25rem;
+}
+.contact{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Bree Serif', serif;
+    color: rgb(120, 30, 210);
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    justify-content: space-between;
+    height: 15em;
+}
+.box{
+    height: 2.3em;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    align-items: center;
+    
+}
+.image{
+    display: flex;
+    align-items: center;
+}
+.image img{
+    height: 35px;
+    width: 35px;
+    padding-right: 5px;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+}
+.git{
+    margin-top: 15px;
+    height: 2.3em;
+    text-align: center;
+}
+.git a img{
+    height: 35px;
+    width: 35px;
+}
+.git a{
+    margin: 5px;
+}
+
+
+@media  (max-width:1100px){
+    
+    
+    .address{
+        margin-top: 100px;
+        width: 100%;
+        height: 150em;
+    }
+    #element{
+        font-size: 100px;
+    }
+    .location{
+        margin-top: 100px;
+        height: 150em;
+    }
+    
+    
+    .box{
+       
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        font-family: 'Bree Serif', serif;
+        font-size: 65px;
+        /* align-items: center;  */
+        height: 200px;
+    
+        
+    }
+    .image img{
+        height: 80px;
+        width: 80px;
+        /* padding-right: 5px; */
+    }
+   
+    .git a img{
+        height: 100px;
+        width: 100px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ABOUT.....................................................................................................................*/
+
+.about{
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+
+.page{
+    height: 550px;
+    /* background-color: rgb(0, 255, 72); */
+    width: 850px;
+    margin-top: 50px;
+}
+.page h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Bree Serif', serif;
+    color: black;
+}
+.achieve{
+    margin-top: 30px;
+    height: 440px;
+    /* background-color: rgb(160, 95, 106); */
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: center;
+    grid-gap: 1rem;
+}
+.code{
+    background-color: rgba(128, 128, 128, 0.342);
+    margin: 4px;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+}
+
+.codeforces{
+    width: 400px;
+    height: 200px;
+}
+
+.bigtext{
+    font-size: 50px;
+    color: rgb(156, 43, 226);
+    font-family: 'Bree Serif', serif;
+    margin-left: 30px;
+    margin-right: 10px;
+
+}
+.smalltext{
+    font-size: 30px;
+    font-family: 'Bree Serif', serif;
+    margin-left: 30px;
+    color: rgba(0, 0, 0, 0.542);
+   
+}
+.bigtext img{
+    height: 40px;
+    width: 40px;
+}
+.line{
+    border: 1px solid rgba(0, 0, 0, 0.448);
+    width: 450px;
+    margin: 15px 0px; 
+}
+.skill{
+    margin-top: 28px;
+    font-size: 40px;
+    font-family: 'Bree Serif', serif;
+    color:black;
+}
+.page1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills{
+    margin-top: 50px;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    font-size: 25px;
+    font-family: 'Bree Serif', serif;
+    grid-gap: 2rem;
+    color: rgb(147, 43, 226);
+}
+
+.education{
+    /* background-color: aqua; */
+    margin-top: 50px;
+    height: 100vw;
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+}
+.college{
+    width: 405px;
+    /* background-color: blueviolet; */
+}
+.school{
+    width: 405px;
+    /* background-color: burlywood; */
+}
+
+.comimage{
+    display: flex;
+    font-size: 20px;
+    align-items: center; font-family: 'Bree Serif', serif;
+}
+.comimage img{
+    height: 28px;
+    width: 30px;
+}
+.comimage p{
+    margin-left: 2px; 
+    background-color: rgba(128, 128, 128, 0.405);
+    border-radius: 10px;
+    padding: 2px 8px;
+}
+.clgname{
+    /* background-color: crimson; */
+    margin-left: 31px;
+    margin-top: 30px;
+    height: 300px;
+}
+
+.bigname{
+    font-family: 'Bree Serif', serif;
+    font-size: 25px;
+}
+.smallname{
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
+    margin-top: 25px;
+    color: rgb(147, 43, 226);
+}
+
+@media  (max-width:1100px){
+    .achieve{
+        grid-template-columns: repeat(1,auto);
+        height: 900px;
+        justify-content: center;
+        align-items: center;
+    }
+    .page{
+        height: 1000px;
+        margin-top: 100px;
+    }
+    .skills{
+        grid-template-columns: repeat(1,auto);
+        justify-content: center; 
+    }
+    .about{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .education{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+/*PROJECT.....................................................................................................................*/
+.project-section{
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.project{
+    height: 600px;
+    width: 900px;
+    /* background-color: brown; */
+}
+.mypro{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Bree Serif', serif;
+    color: rgb(120, 30, 210);
+    
+}
+.project-text{
+    font-size: 25px;
+    font-family: 'Bree Serif', serif;
+}
+.project-items{
+    background-color: chartreuse;
+    height: 430px;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 625px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 1.5rem;
+}
